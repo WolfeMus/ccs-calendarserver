@@ -582,14 +582,13 @@ c_dependencies () {
       using_system "SASL";
     fi;
   else
-    local v="2.1.26";
+    local v="2.1.28";
     local n="cyrus-sasl";
     local p="${n}-${v}";
 
    c_dependency -m  \
    	"CyrusSASL" "${p}" \
- 	 "https://www.cyrusimap.org/releases/${p}.tar.gz" \
- 	--disable-macos-framework;
+ 	 "https://www.cyrusimap.org/releases/${p}.tar.gz" ;
   fi;
 
 
